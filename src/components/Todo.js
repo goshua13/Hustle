@@ -39,12 +39,14 @@ class Todo extends Component {
     this.props.todoItem("");
   }
   todo() {
-    var todo = this.props.addItem
+    var todo = this.props.addItem || localStorage.getItem('todo')
     return (
       <h4
         className="text-white text-center todo-item"
         onClick={() => this.removeTodo()}
       >
+      <h5>Today</h5>
+      <br/>
         {todo}
       </h4>
     );
