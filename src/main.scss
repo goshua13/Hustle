@@ -1,0 +1,42 @@
+.content {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.components {
+  max-height: 100vw;
+  display: grid;
+  position: relative;
+  margin: auto auto;
+}
+
+img {
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.input-field {
+  width: 40vw;
+  margin: 0px 200px;
+  text-align: center;
+  input {
+    text-align: center;
+    color: white;
+    opacity: .7;
+    font-size: 20px !important;
+  }
+}
+
+.todo-item{
+    font-size: 2vw;
+    &:hover{
+        cursor: pointer;
+    }
+}
