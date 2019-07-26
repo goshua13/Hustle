@@ -5,6 +5,11 @@ import { connect } from "react-redux";
 class Todo extends Component {
   state = { text: "" };
 
+  componentDidMount() {
+    this.props.todoItem(localStorage.getItem('todo'))
+  }
+  
+
   onChange = e => {
     this.setState({
       text: e.target.value
