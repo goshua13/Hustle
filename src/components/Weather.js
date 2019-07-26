@@ -4,9 +4,8 @@ import { connect } from 'react-redux';
 
 class Weather extends Component {
   render() {
-      console.log(this.props.fetchWeather())
     return (
-        <div className=''>   
+        <div className='weather'>   
             weather
         </div>
     )

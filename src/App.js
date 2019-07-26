@@ -4,6 +4,7 @@ import Clock from "./components/Clock";
 import Todo from "./components/Todo";
 import Weather from "./components/Weather";
 import Name from "./components/Name";
+import Quotes from './components/Quotes';
 
 import { connect } from "react-redux";
 
@@ -33,13 +34,13 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props.name);
     return (
       <div id="app">
+        <img src={this.bgImage()} />
         <Weather />
         <div className="content">
-          <img src={this.bgImage()} />
           <div className="components">{this.renderPage()}</div>
+          <Quotes />
         </div>
       </div>
     );

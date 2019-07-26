@@ -1,16 +1,15 @@
-.content {
-    height: 100vh;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+#app {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
 }
-
-
-.components {
-  max-height: 100vw;
-  display: grid;
-  position: relative;
-  margin: auto auto;
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 
 img {
@@ -29,14 +28,21 @@ img {
   input {
     text-align: center;
     color: white;
-    opacity: .7;
+    opacity: 0.7;
     font-size: 20px !important;
   }
 }
-
-.todo-item{
-    font-size: 2vw;
-    &:hover{
-        cursor: pointer;
-    }
+#quotes {
+  max-width: 40vw;
+  padding: 20px;
+  position: absolute;
+}
+.weather{
+  position: fixed;
+}
+.todo-item {
+  font-size: 2vw;
+  &:hover {
+    cursor: pointer;
+  }
 }

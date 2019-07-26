@@ -45,7 +45,7 @@ class Todo extends Component {
         className="text-white text-center todo-item"
         onClick={() => this.removeTodo()}
       >
-      <h5>Today</h5>
+      <b>Today</b>
       <br/>
         {todo}
       </h4>
@@ -62,7 +62,7 @@ class Todo extends Component {
   }
 
   render() {
-    return <div className="container">{this.renderContent()}</div>;
+    return <div className="container d-flex justify-content-center">{this.renderContent()}</div>;
   }
 }
 const mapStateToProps = ({ item }) => {

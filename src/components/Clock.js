@@ -9,15 +9,19 @@ const Clock = ({name}) => {
 
   useEffect(() => {
     tick();
-  });
+  }, 500);
 
-  const currentTime = () => {
+function currentTime() {
+ let thatTime = time.toLocaleTimeString(navigator.language, {
+    hour: "2-digit",
+    minute: "2-digit"
+  })
+  if(thatTime[0] == 0){
+    thatTime = thatTime.replace(/^0+/, '')
+  }
     return (
       <h1 id="currentTime" style={{ fontFamily: "Orbitron", fontSize: "100px" }}>
-        {time.toLocaleTimeString(navigator.language, {
-          hour: "2-digit",
-          minute: "2-digit"
-        })}
+        {thatTime}
       </h1>
     );
   };
