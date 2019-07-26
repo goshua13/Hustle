@@ -20,7 +20,7 @@ function currentTime() {
     thatTime = thatTime.replace(/^0+/, '')
   }
     return (
-      <h1 id="currentTime" style={{ fontFamily: "Orbitron", fontSize: "100px" }}>
+      <h1 id="currentTime" style={{ fontFamily: "Revalia", fontSize: "100px", fontWeight: 'bold' }}>
         {thatTime}
       </h1>
     );

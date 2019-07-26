@@ -7,7 +7,6 @@ const ROOT_URL = `https://samples.openweathermap.org/data/2.5/weather?appid=${AP
 export const fetchWeather = (city) => async dispatch =>{
     const url = `${ROOT_URL}&q={city},us`
     const request = await axios.get(url);
-
     return dispatch({ type: FETCH_WEATHER, payload: request})
 }
 
