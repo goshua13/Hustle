@@ -1,12 +1,12 @@
 import { FETCH_WEATHER, STORE_ITEM, NAME } from './types';
 import axios from 'axios'
 
-const API_KEY = '98e5ea952ce5cc5f6c66bc84d5aa8dfa';
-const ROOT_URL = `https://samples.openweathermap.org/data/2.5/weather?appid=${API_KEY}`
+const API_KEY = '51261790ca4bc7aae8cc051f9d1c2b5c';
+const ROOT_URL = `https://api.darksky.net/forecast/${API_KEY}`
 
-export const fetchWeather = (city) => async dispatch =>{
-    const url = `${ROOT_URL}&q={city},us`
-    const request = await axios.get(url);
+export const fetchWeather = ({coords}) => async dispatch =>{
+    const url = `${ROOT_URL}/${coords.latitude},${coords.longitude}`
+    const request = await axios.get(url)
     return dispatch({ type: FETCH_WEATHER, payload: request})
 }
 
