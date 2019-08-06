@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Hustle/static/css/main.9a47bb44.chunk.css",
-    "main.js": "/Hustle/static/js/main.896bd696.chunk.js",
-    "main.js.map": "/Hustle/static/js/main.896bd696.chunk.js.map",
+    "main.js": "/Hustle/static/js/main.68ce99d0.chunk.js",
+    "main.js.map": "/Hustle/static/js/main.68ce99d0.chunk.js.map",
     "runtime~main.js": "/Hustle/static/js/runtime~main.80e38428.js",
     "runtime~main.js.map": "/Hustle/static/js/runtime~main.80e38428.js.map",
     "static/js/2.ac79386f.chunk.js": "/Hustle/static/js/2.ac79386f.chunk.js",
     "static/js/2.ac79386f.chunk.js.map": "/Hustle/static/js/2.ac79386f.chunk.js.map",
     "index.html": "/Hustle/index.html",
-    "precache-manifest.cb86d040e59b7657244d777f9a981b6b.js": "/Hustle/precache-manifest.cb86d040e59b7657244d777f9a981b6b.js",
+    "precache-manifest.0cef008265d0fff4a5f26bc8177f07a5.js": "/Hustle/precache-manifest.0cef008265d0fff4a5f26bc8177f07a5.js",
     "service-worker.js": "/Hustle/service-worker.js",
     "static/css/main.9a47bb44.chunk.css.map": "/Hustle/static/css/main.9a47bb44.chunk.css.map"
   }
