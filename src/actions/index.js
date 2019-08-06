@@ -1,16 +1,16 @@
 import { FETCH_WEATHER, STORE_ITEM, NAME } from './types';
 import axios from 'axios'
 
-const API_KEY = '51261790ca4bc7aae8cc051f9d1c2b5c';
-const ROOT_URL = `https://api.darksky.net/forecast/${API_KEY}`
+const API_KEY = '54670d34f8d9089536b383f9a5a7769d';
+const ROOT_URL = `api.openweathermap.org/data/2.5/weather?`
 
 export const fetchWeather = ({coords}) => async dispatch =>{
-    const url = `${ROOT_URL}/${coords.latitude},${coords.longitude}`
+    const url = `http://api.openweathermap.org/data/2.5/weather?lat=${coords.latitude}&lon=${coords.longitude}&APPID=54670d34f8d9089536b383f9a5a7769d`
     const request = await axios.get(url)
-    return dispatch({ type: FETCH_WEATHER, payload: request})
+    return dispatch({ type: FETCH_WEATHER, payload: request.data})
 }
 
-export const todoItem = item => ( localStorage.setItem('todo', item), {
+export const todoItem = item => (localStorage.setItem('todo', item), {
   type: STORE_ITEM,
   payload: item
 })
